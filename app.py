@@ -23,7 +23,7 @@ def telegram():
     # 1.1 request.get_json() 구조 확인하기
     print(request.get_json())
     # 1.2 사용자 아이디, 텍스트 가져오기
-    chat_id = request.get_json().get('message').get('from').get('id')
+    # chat_id = request.get_json().get('message').get('from').get('id')
     text = request.get_json().get('message').get('text')
     print(chat_id, text)
     # 1.3 텔레그램 API에게 요청을 보내서 답변해주기
